@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph GraphDirection="LeftToRight" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+<Node Id="IModel" Label="ApplicationDbContext" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot" PropertyAccessMode="PropertyAccessMode.Default" ProductVersion="7.0.13" Annotations="BaseTypeDiscoveryConvention:DerivedTypes: System.Collections.Generic.Dictionary`2[System.Type,System.Collections.Generic.List`1[Microsoft.EntityFrameworkCore.Metadata.IConventionEntityType]]
+Relational:MaxIdentifierLength: 128
+RelationshipDiscoveryConvention:InverseNavigationCandidates: System.Collections.Generic.Dictionary`2[System.Type,System.Collections.Generic.SortedSet`1[System.Type]]
+SqlServer:ValueGenerationStrategy: IdentityColumn" Category="Model" Group="Expanded" />
+<Node Id = "AvailableMovies" Label="AvailableMovies" Name="AvailableMovies" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="Relational:TableName: AvailableMovies
+RelationshipDiscoveryConvention:NavigationCandidates: System.Collections.Immutable.ImmutableSortedDictionary`2[System.Reflection.PropertyInfo,System.ValueTuple`2[System.Type,System.Nullable`1[System.Boolean]]]" Category="EntityType" Group="Expanded" />
+<Node Id = "Cart" Label="Cart" Name="Cart" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="Relational:TableName: Carts
+RelationshipDiscoveryConvention:NavigationCandidates: System.Collections.Immutable.ImmutableSortedDictionary`2[System.Reflection.PropertyInfo,System.ValueTuple`2[System.Type,System.Nullable`1[System.Boolean]]]" Category="EntityType" Group="Expanded" />
+<Node Id = "AvailableMovies.AvailableMoviesId" Label="AvailableMoviesId (int)" Name="AvailableMoviesId" Category="Property Primary" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="SqlServer:ValueGenerationStrategy: IdentityColumn" IsPrimaryKey="True" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="ValueGenerated.OnAdd" />
+<Node Id = "AvailableMovies.Visitors" Label="Visitors (1)" Name="Visitors" Category="Navigation Property" Type="Visitor"  Field="" Dependent="" Principal="Visitor" Inverse="" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "AvailableMovies.ContentRating" Label="ContentRating (string)" Name="ContentRating" Category="Property Required" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "AvailableMovies.Description" Label="Description (string)" Name="Description" Category="Property Required" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "AvailableMovies.Genre" Label="Genre (string)" Name="Genre" Category="Property Required" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "AvailableMovies.GenreId" Label="GenreId (int?)" Name="GenreId" Category="Property Foreign" Type="int?" MaxLength="None" Field="nofield" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="True" IsRequired="False" IsIndexed="True" IsShadow="True" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "AvailableMovies.MovieDates" Label="MovieDates (DateTime)" Name="MovieDates" Category="Property Required" Type="DateTime" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "AvailableMovies.Price" Label="Price (decimal)" Name="Price" Category="Property Required" Type="decimal" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "AvailableMovies.SeatNumber" Label="SeatNumber (int)" Name="SeatNumber" Category="Property Required" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "AvailableMovies.Title" Label="Title (string)" Name="Title" Category="Property Required" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "AvailableMovies.VisitorId" Label="VisitorId (int)" Name="VisitorId" Category="Property Required" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "CinemaLocation" Label="CinemaLocation" Name="CinemaLocation" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="Relational:TableName: CinemaLocation
+RelationshipDiscoveryConvention:NavigationCandidates: System.Collections.Immutable.ImmutableSortedDictionary`2[System.Reflection.PropertyInfo,System.ValueTuple`2[System.Type,System.Nullable`1[System.Boolean]]]" Category="EntityType" Group="Expanded" />
+<Node Id = "Cart.CartId" Label="CartId (int)" Name="CartId" Category="Property Primary" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="SqlServer:ValueGenerationStrategy: IdentityColumn" IsPrimaryKey="True" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="ValueGenerated.OnAdd" />
+<Node Id = "Cart.Visitor" Label="Visitor (1)" Name="Visitor" Category="Navigation Property" Type="Visitor"  Field="" Dependent="" Principal="Visitor" Inverse="" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Cart.CreatedDate" Label="CreatedDate (DateTime)" Name="CreatedDate" Category="Property Required" Type="DateTime" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Cart.VisitorId" Label="VisitorId (int)" Name="VisitorId" Category="Property Foreign" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="True" IsRequired="True" IsIndexed="True" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "City" Label="City" Name="City" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="Relational:TableName: City
+RelationshipDiscoveryConvention:NavigationCandidates: System.Collections.Immutable.ImmutableSortedDictionary`2[System.Reflection.PropertyInfo,System.ValueTuple`2[System.Type,System.Nullable`1[System.Boolean]]]" Category="EntityType" Group="Expanded" />
+<Node Id = "CinemaLocation.CinemaLocationId" Label="CinemaLocationId (int)" Name="CinemaLocationId" Category="Property Primary" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="SqlServer:ValueGenerationStrategy: IdentityColumn" IsPrimaryKey="True" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="ValueGenerated.OnAdd" />
+<Node Id = "CinemaLocation.Address" Label="Address (string)" Name="Address" Category="Property Required" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "CinemaLocation.Latitude" Label="Latitude (double)" Name="Latitude" Category="Property Required" Type="double" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "CinemaLocation.Longitude" Label="Longitude (double)" Name="Longitude" Category="Property Required" Type="double" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "CinemaLocation.Name" Label="Name (string)" Name="Name" Category="Property Required" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "CinemaLocation.ZipCode" Label="ZipCode (int)" Name="ZipCode" Category="Property Required" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Country" Label="Country" Name="Country" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="Relational:TableName: Country
+RelationshipDiscoveryConvention:NavigationCandidates: System.Collections.Immutable.ImmutableSortedDictionary`2[System.Reflection.PropertyInfo,System.ValueTuple`2[System.Type,System.Nullable`1[System.Boolean]]]" Category="EntityType" Group="Expanded" />
+<Node Id = "City.CityId" Label="CityId (int)" Name="CityId" Category="Property Primary" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="SqlServer:ValueGenerationStrategy: IdentityColumn" IsPrimaryKey="True" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="ValueGenerated.OnAdd" />
+<Node Id = "City.Country" Label="Country (1)" Name="Country" Category="Navigation Property" Type="Country"  Field="" Dependent="" Principal="Country" Inverse="City" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "City.Location" Label="Location (1)" Name="Location" Category="Navigation Property" Type="Location"  Field="" Dependent="" Principal="Location" Inverse="City" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "City.State" Label="State (1)" Name="State" Category="Navigation Property" Type="State"  Field="" Dependent="State" Principal="" Inverse="City" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "City.CountryId" Label="CountryId (int)" Name="CountryId" Category="Property Foreign" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="True" IsRequired="True" IsIndexed="True" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "City.LocationId" Label="LocationId (int)" Name="LocationId" Category="Property Foreign" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="True" IsRequired="True" IsIndexed="True" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "City.Name" Label="Name (string)" Name="Name" Category="Property Required" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "City.StateId" Label="StateId (int)" Name="StateId" Category="Property Required" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Genre" Label="Genre" Name="Genre" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="Relational:TableName: Genres
+RelationshipDiscoveryConvention:NavigationCandidates: System.Collections.Immutable.ImmutableSortedDictionary`2[System.Reflection.PropertyInfo,System.ValueTuple`2[System.Type,System.Nullable`1[System.Boolean]]]" Category="EntityType" Group="Expanded" />
+<Node Id = "Country.CountryId" Label="CountryId (int)" Name="CountryId" Category="Property Primary" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="SqlServer:ValueGenerationStrategy: IdentityColumn" IsPrimaryKey="True" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="ValueGenerated.OnAdd" />
+<Node Id = "Country.City" Label="City (1)" Name="City" Category="Navigation Property" Type="City"  Field="" Dependent="City" Principal="" Inverse="Country" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Country.Location" Label="Location (1)" Name="Location" Category="Navigation Property" Type="Location"  Field="" Dependent="Location" Principal="" Inverse="Country" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Country.State" Label="State (1)" Name="State" Category="Navigation Property" Type="State"  Field="" Dependent="State" Principal="" Inverse="Country" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Country.LocationId" Label="LocationId (int)" Name="LocationId" Category="Property Required" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Country.Name" Label="Name (string)" Name="Name" Category="Property Required" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Location" Label="Location" Name="Location" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="Relational:TableName: Locations
+RelationshipDiscoveryConvention:NavigationCandidates: System.Collections.Immutable.ImmutableSortedDictionary`2[System.Reflection.PropertyInfo,System.ValueTuple`2[System.Type,System.Nullable`1[System.Boolean]]]" Category="EntityType" Group="Expanded" />
+<Node Id = "Genre.MovieId" Label="MovieId (int)" Name="MovieId" Category="Property Primary" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="True" IsForeignKey="True" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Genre.Movies" Label="Movies (1)" Name="Movies" Category="Navigation Property" Type="Movies"  Field="" Dependent="" Principal="Movies" Inverse="Genres" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Genre.GenreId" Label="GenreId (int)" Name="GenreId" Category="Property Required" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Genre.Name" Label="Name (string)" Name="Name" Category="Property Optional" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Movies" Label="Movies" Name="Movies" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="Relational:TableName: Movies
+RelationshipDiscoveryConvention:NavigationCandidates: System.Collections.Immutable.ImmutableSortedDictionary`2[System.Reflection.PropertyInfo,System.ValueTuple`2[System.Type,System.Nullable`1[System.Boolean]]]" Category="EntityType" Group="Expanded" />
+<Node Id = "Location.LocationId" Label="LocationId (int)" Name="LocationId" Category="Property Primary" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="True" IsForeignKey="True" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Location.City" Label="City (1)" Name="City" Category="Navigation Property" Type="City"  Field="" Dependent="City" Principal="" Inverse="Location" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Location.Country" Label="Country (1)" Name="Country" Category="Navigation Property" Type="Country"  Field="" Dependent="" Principal="Country" Inverse="Location" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Location.State" Label="State (1)" Name="State" Category="Navigation Property" Type="State"  Field="" Dependent="" Principal="State" Inverse="" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Location.Visitor" Label="Visitor (1)" Name="Visitor" Category="Navigation Property" Type="Visitor"  Field="" Dependent="" Principal="Visitor" Inverse="" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Location.Address" Label="Address (string)" Name="Address" Category="Property Required" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Location.Latitude" Label="Latitude (double)" Name="Latitude" Category="Property Required" Type="double" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Location.Longitude" Label="Longitude (double)" Name="Longitude" Category="Property Required" Type="double" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Location.Name" Label="Name (string)" Name="Name" Category="Property Required" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Location.StateId" Label="StateId (int?)" Name="StateId" Category="Property Foreign" Type="int?" MaxLength="None" Field="nofield" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="True" IsRequired="False" IsIndexed="True" IsShadow="True" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Location.VisitorId" Label="VisitorId (int)" Name="VisitorId" Category="Property Foreign" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="True" IsRequired="True" IsIndexed="True" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Location.ZipCode" Label="ZipCode (int)" Name="ZipCode" Category="Property Required" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "SearchForMoviesByLocation" Label="SearchForMoviesByLocation" Name="SearchForMoviesByLocation" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="Relational:TableName: SearchforMovies
+RelationshipDiscoveryConvention:NavigationCandidates: System.Collections.Immutable.ImmutableSortedDictionary`2[System.Reflection.PropertyInfo,System.ValueTuple`2[System.Type,System.Nullable`1[System.Boolean]]]" Category="EntityType" Group="Expanded" />
+<Node Id = "Movies.MoviesId" Label="MoviesId (int)" Name="MoviesId" Category="Property Primary" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="SqlServer:ValueGenerationStrategy: IdentityColumn" IsPrimaryKey="True" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="ValueGenerated.OnAdd" />
+<Node Id = "Movies.Genres" Label="Genres (*)" Name="Genres" Category="Navigation Collection" Type="List&lt;Genre&gt;"  Field="" Dependent="Genre" Principal="" Inverse="Movies" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Movies.ContentRating" Label="ContentRating (string)" Name="ContentRating" Category="Property Required" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Movies.Description" Label="Description (string)" Name="Description" Category="Property Required" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Movies.ReleaseDate" Label="ReleaseDate (DateTime)" Name="ReleaseDate" Category="Property Required" Type="DateTime" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Movies.Title" Label="Title (string)" Name="Title" Category="Property Required" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "State" Label="State" Name="State" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="Relational:TableName: State
+RelationshipDiscoveryConvention:NavigationCandidates: System.Collections.Immutable.ImmutableSortedDictionary`2[System.Reflection.PropertyInfo,System.ValueTuple`2[System.Type,System.Nullable`1[System.Boolean]]]" Category="EntityType" Group="Expanded" />
+<Node Id = "SearchForMoviesByLocation.SearchForMoviesByLocationId" Label="SearchForMoviesByLocationId (int)" Name="SearchForMoviesByLocationId" Category="Property Primary" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="SqlServer:ValueGenerationStrategy: IdentityColumn" IsPrimaryKey="True" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="ValueGenerated.OnAdd" />
+<Node Id = "SearchForMoviesByLocation.Locations" Label="Locations (1)" Name="Locations" Category="Navigation Property" Type="Location"  Field="" Dependent="" Principal="Location" Inverse="" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "SearchForMoviesByLocation.Visitor" Label="Visitor (1)" Name="Visitor" Category="Navigation Property" Type="Visitor"  Field="" Dependent="" Principal="Visitor" Inverse="" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "SearchForMoviesByLocation.GenreId" Label="GenreId (int?)" Name="GenreId" Category="Property Foreign" Type="int?" MaxLength="None" Field="nofield" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="True" IsRequired="False" IsIndexed="True" IsShadow="True" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "SearchForMoviesByLocation.Location" Label="Location (int)" Name="Location" Category="Property Required" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "SearchForMoviesByLocation.VisitorId" Label="VisitorId (int)" Name="VisitorId" Category="Property Foreign" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="True" IsRequired="True" IsIndexed="True" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Ticket" Label="Ticket" Name="Ticket" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="Relational:TableName: Tickets
+RelationshipDiscoveryConvention:NavigationCandidates: System.Collections.Immutable.ImmutableSortedDictionary`2[System.Reflection.PropertyInfo,System.ValueTuple`2[System.Type,System.Nullable`1[System.Boolean]]]" Category="EntityType" Group="Expanded" />
+<Node Id = "State.StateId" Label="StateId (int)" Name="StateId" Category="Property Primary" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="True" IsForeignKey="True" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "State.City" Label="City (1)" Name="City" Category="Navigation Property" Type="City"  Field="" Dependent="" Principal="City" Inverse="State" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "State.Country" Label="Country (1)" Name="Country" Category="Navigation Property" Type="Country"  Field="" Dependent="" Principal="Country" Inverse="State" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "State.CountryId" Label="CountryId (int)" Name="CountryId" Category="Property Foreign" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="True" IsRequired="True" IsIndexed="True" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "State.Name" Label="Name (string)" Name="Name" Category="Property Required" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Visitor" Label="Visitor" Name="Visitor" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="Relational:TableName: Visitors
+RelationshipDiscoveryConvention:NavigationCandidates: System.Collections.Immutable.ImmutableSortedDictionary`2[System.Reflection.PropertyInfo,System.ValueTuple`2[System.Type,System.Nullable`1[System.Boolean]]]" Category="EntityType" Group="Expanded" />
+<Node Id = "Ticket.TicketId" Label="TicketId (int)" Name="TicketId" Category="Property Primary" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="SqlServer:ValueGenerationStrategy: IdentityColumn" IsPrimaryKey="True" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="ValueGenerated.OnAdd" />
+<Node Id = "Ticket.Visitor" Label="Visitor (1)" Name="Visitor" Category="Navigation Property" Type="Visitor"  Field="" Dependent="" Principal="Visitor" Inverse="" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Ticket.SeatNumber" Label="SeatNumber (int)" Name="SeatNumber" Category="Property Required" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Ticket.SelectedDate" Label="SelectedDate (DateTime)" Name="SelectedDate" Category="Property Required" Type="DateTime" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Ticket.SelectedTime" Label="SelectedTime (DateTime)" Name="SelectedTime" Category="Property Required" Type="DateTime" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Ticket.TotalPrice" Label="TotalPrice (decimal)" Name="TotalPrice" Category="Property Required" Type="decimal" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Ticket.VisitorId" Label="VisitorId (int)" Name="VisitorId" Category="Property Foreign" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="True" IsRequired="True" IsIndexed="True" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Visitor" Label="Visitor" Name="Visitor" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="" Category="EntityType" Group="Expanded" />
+<Node Id = "Visitor.VisitorId" Label="VisitorId (int)" Name="VisitorId" Category="Property Primary" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="SqlServer:ValueGenerationStrategy: IdentityColumn" IsPrimaryKey="True" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="ValueGenerated.OnAdd" />
+<Node Id = "Visitor.Name" Label="Name (string)" Name="Name" Category="Property Required" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+  </Nodes>
+  <Links>
+<Link Source = "IModel" Target="AvailableMovies" Category="Contains" />
+<Link Source = "IModel" Target="Cart" Category="Contains" />
+<Link Source = "AvailableMovies" Target="AvailableMovies.Visitors" Category="Contains" />
+<Link Source = "AvailableMovies" Target="AvailableMovies.AvailableMoviesId" Category="Contains" />
+<Link Source="AvailableMovies" Target="Visitor" From="AvailableMovies.GenreId" To="Visitor.VisitorId" Name="AvailableMovies -> Visitor" Annotations="" IsUnique="False" Label="1:*" Category="Foreign Key" />
+<Link Source = "AvailableMovies" Target="AvailableMovies.ContentRating" Category="Contains" />
+<Link Source = "AvailableMovies" Target="AvailableMovies.Description" Category="Contains" />
+<Link Source = "AvailableMovies" Target="AvailableMovies.Genre" Category="Contains" />
+<Link Source = "AvailableMovies" Target="AvailableMovies.GenreId" Category="Contains" />
+<Link Source = "AvailableMovies" Target="AvailableMovies.MovieDates" Category="Contains" />
+<Link Source = "AvailableMovies" Target="AvailableMovies.Price" Category="Contains" />
+<Link Source = "AvailableMovies" Target="AvailableMovies.SeatNumber" Category="Contains" />
+<Link Source = "AvailableMovies" Target="AvailableMovies.Title" Category="Contains" />
+<Link Source = "AvailableMovies" Target="AvailableMovies.VisitorId" Category="Contains" />
+<Link Source = "IModel" Target="CinemaLocation" Category="Contains" />
+<Link Source = "Cart" Target="Cart.Visitor" Category="Contains" />
+<Link Source = "Cart" Target="Cart.CartId" Category="Contains" />
+<Link Source="Cart" Target="Visitor" From="Cart.VisitorId" To="Visitor.VisitorId" Name="Cart -> Visitor" Annotations="" IsUnique="False" Label="1:*" Category="Foreign Key" />
+<Link Source = "Cart" Target="Cart.CreatedDate" Category="Contains" />
+<Link Source = "Cart" Target="Cart.VisitorId" Category="Contains" />
+<Link Source = "IModel" Target="City" Category="Contains" />
+<Link Source = "CinemaLocation" Target="CinemaLocation.CinemaLocationId" Category="Contains" />
+<Link Source = "CinemaLocation" Target="CinemaLocation.Address" Category="Contains" />
+<Link Source = "CinemaLocation" Target="CinemaLocation.Latitude" Category="Contains" />
+<Link Source = "CinemaLocation" Target="CinemaLocation.Longitude" Category="Contains" />
+<Link Source = "CinemaLocation" Target="CinemaLocation.Name" Category="Contains" />
+<Link Source = "CinemaLocation" Target="CinemaLocation.ZipCode" Category="Contains" />
+<Link Source = "IModel" Target="Country" Category="Contains" />
+<Link Source = "City" Target="City.Country" Category="Contains" />
+<Link Source = "City" Target="City.Location" Category="Contains" />
+<Link Source = "City" Target="City.State" Category="Contains" />
+<Link Source = "City" Target="City.CityId" Category="Contains" />
+<Link Source="City" Target="Country" From="City.CountryId" To="Country.CountryId" Name="City -> Country" Annotations="" IsUnique="True" Label="1:1" Category="Foreign Key" />
+<Link Source="City" Target="Location" From="City.LocationId" To="Location.LocationId" Name="City -> Location" Annotations="" IsUnique="True" Label="1:1" Category="Foreign Key" />
+<Link Source = "City" Target="City.CountryId" Category="Contains" />
+<Link Source = "City" Target="City.LocationId" Category="Contains" />
+<Link Source = "City" Target="City.Name" Category="Contains" />
+<Link Source = "City" Target="City.StateId" Category="Contains" />
+<Link Source = "IModel" Target="Genre" Category="Contains" />
+<Link Source = "Country" Target="Country.City" Category="Contains" />
+<Link Source = "Country" Target="Country.Location" Category="Contains" />
+<Link Source = "Country" Target="Country.State" Category="Contains" />
+<Link Source = "Country" Target="Country.CountryId" Category="Contains" />
+<Link Source = "Country" Target="Country.LocationId" Category="Contains" />
+<Link Source = "Country" Target="Country.Name" Category="Contains" />
+<Link Source = "IModel" Target="Location" Category="Contains" />
+<Link Source = "Genre" Target="Genre.Movies" Category="Contains" />
+<Link Source = "Genre" Target="Genre.MovieId" Category="Contains" />
+<Link Source="Genre" Target="Movies" From="Genre.MovieId" To="Movies.MoviesId" Name="Genre -> Movies" Annotations="" IsUnique="False" Label="1:*" Category="Foreign Key" />
+<Link Source = "Genre" Target="Genre.GenreId" Category="Contains" />
+<Link Source = "Genre" Target="Genre.Name" Category="Contains" />
+<Link Source = "IModel" Target="Movies" Category="Contains" />
+<Link Source = "Location" Target="Location.City" Category="Contains" />
+<Link Source = "Location" Target="Location.Country" Category="Contains" />
+<Link Source = "Location" Target="Location.State" Category="Contains" />
+<Link Source = "Location" Target="Location.Visitor" Category="Contains" />
+<Link Source = "Location" Target="Location.LocationId" Category="Contains" />
+<Link Source="Location" Target="Country" From="Location.LocationId" To="Country.CountryId" Name="Location -> Country" Annotations="" IsUnique="True" Label="1:1" Category="Foreign Key" />
+<Link Source="Location" Target="State" From="Location.StateId" To="State.StateId" Name="Location -> State" Annotations="" IsUnique="False" Label="1:*" Category="Foreign Key" />
+<Link Source="Location" Target="Visitor" From="Location.VisitorId" To="Visitor.VisitorId" Name="Location -> Visitor" Annotations="" IsUnique="False" Label="1:*" Category="Foreign Key" />
+<Link Source = "Location" Target="Location.Address" Category="Contains" />
+<Link Source = "Location" Target="Location.Latitude" Category="Contains" />
+<Link Source = "Location" Target="Location.Longitude" Category="Contains" />
+<Link Source = "Location" Target="Location.Name" Category="Contains" />
+<Link Source = "Location" Target="Location.StateId" Category="Contains" />
+<Link Source = "Location" Target="Location.VisitorId" Category="Contains" />
+<Link Source = "Location" Target="Location.ZipCode" Category="Contains" />
+<Link Source = "IModel" Target="SearchForMoviesByLocation" Category="Contains" />
+<Link Source = "Movies" Target="Movies.Genres" Category="Contains" />
+<Link Source = "Movies" Target="Movies.MoviesId" Category="Contains" />
+<Link Source = "Movies" Target="Movies.ContentRating" Category="Contains" />
+<Link Source = "Movies" Target="Movies.Description" Category="Contains" />
+<Link Source = "Movies" Target="Movies.ReleaseDate" Category="Contains" />
+<Link Source = "Movies" Target="Movies.Title" Category="Contains" />
+<Link Source = "IModel" Target="State" Category="Contains" />
+<Link Source = "SearchForMoviesByLocation" Target="SearchForMoviesByLocation.Locations" Category="Contains" />
+<Link Source = "SearchForMoviesByLocation" Target="SearchForMoviesByLocation.Visitor" Category="Contains" />
+<Link Source = "SearchForMoviesByLocation" Target="SearchForMoviesByLocation.SearchForMoviesByLocationId" Category="Contains" />
+<Link Source="SearchForMoviesByLocation" Target="Location" From="SearchForMoviesByLocation.GenreId" To="Location.LocationId" Name="SearchForMoviesByLocation -> Location" Annotations="" IsUnique="False" Label="1:*" Category="Foreign Key" />
+<Link Source="SearchForMoviesByLocation" Target="Visitor" From="SearchForMoviesByLocation.VisitorId" To="Visitor.VisitorId" Name="SearchForMoviesByLocation -> Visitor" Annotations="" IsUnique="False" Label="1:*" Category="Foreign Key" />
+<Link Source = "SearchForMoviesByLocation" Target="SearchForMoviesByLocation.GenreId" Category="Contains" />
+<Link Source = "SearchForMoviesByLocation" Target="SearchForMoviesByLocation.Location" Category="Contains" />
+<Link Source = "SearchForMoviesByLocation" Target="SearchForMoviesByLocation.VisitorId" Category="Contains" />
+<Link Source = "IModel" Target="Ticket" Category="Contains" />
+<Link Source = "State" Target="State.City" Category="Contains" />
+<Link Source = "State" Target="State.Country" Category="Contains" />
+<Link Source = "State" Target="State.StateId" Category="Contains" />
+<Link Source="State" Target="Country" From="State.CountryId" To="Country.CountryId" Name="State -> Country" Annotations="" IsUnique="True" Label="1:1" Category="Foreign Key" />
+<Link Source="State" Target="City" From="State.StateId" To="City.CityId" Name="State -> City" Annotations="" IsUnique="True" Label="1:1" Category="Foreign Key" />
+<Link Source = "State" Target="State.CountryId" Category="Contains" />
+<Link Source = "State" Target="State.Name" Category="Contains" />
+<Link Source = "IModel" Target="Visitor" Category="Contains" />
+<Link Source = "Ticket" Target="Ticket.Visitor" Category="Contains" />
+<Link Source = "Ticket" Target="Ticket.TicketId" Category="Contains" />
+<Link Source="Ticket" Target="Visitor" From="Ticket.VisitorId" To="Visitor.VisitorId" Name="Ticket -> Visitor" Annotations="" IsUnique="False" Label="1:*" Category="Foreign Key" />
+<Link Source = "Ticket" Target="Ticket.SeatNumber" Category="Contains" />
+<Link Source = "Ticket" Target="Ticket.SelectedDate" Category="Contains" />
+<Link Source = "Ticket" Target="Ticket.SelectedTime" Category="Contains" />
+<Link Source = "Ticket" Target="Ticket.TotalPrice" Category="Contains" />
+<Link Source = "Ticket" Target="Ticket.VisitorId" Category="Contains" />
+<Link Source = "IModel" Target="Visitor" Category="Contains" />
+<Link Source = "Visitor" Target="Visitor.VisitorId" Category="Contains" />
+<Link Source = "Visitor" Target="Visitor.Name" Category="Contains" />
+  </Links>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="EntityType" ValueLabel="True">
+      <Condition Expression="HasCategory('EntityType')" />
+      <Setter Property="Background" Value="#FFC0C0C0" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Property Primary" ValueLabel="True">
+      <Condition Expression="HasCategory('Property Primary')" />
+      <Setter Property="Background" Value="#FF008000" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Property Optional" ValueLabel="True">
+      <Condition Expression="HasCategory('Property Optional')" />
+      <Setter Property="Background" Value="#FF808040" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Property Foreign" ValueLabel="True">
+      <Condition Expression="HasCategory('Property Foreign')" />
+      <Setter Property="Background" Value="#FF8080FF" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Property Required" ValueLabel="True">
+      <Condition Expression="HasCategory('Property Required')" />
+      <Setter Property="Background" Value="#FFC0A000" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Navigation Property" ValueLabel="True">
+      <Condition Expression="HasCategory('Navigation Property')" />
+      <Setter Property="Background" Value="#FF990000" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Navigation Collection" ValueLabel="True">
+      <Condition Expression="HasCategory('Navigation Collection')" />
+      <Setter Property="Background" Value="#FFFF3232" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Model" ValueLabel="True">
+      <Condition Expression="HasCategory('Model')" />
+      <Setter Property="Background" Value="#FFFFFFFF" />
+    </Style>
+  </Styles>
+  <Properties>
+    <Property Id="Name" Group="Model Properties" DataType="System.String" />
+    <Property Id="Field"  Description="Backing field" Group="Model Properties" DataType="System.String" />
+    <Property Id="Type"  Description="CLR data type" Group="Model Properties" DataType="System.String" />
+    <Property Id="To" Description="Source property" Group="Model Properties" DataType="System.String" />
+    <Property Id="From" Description="Target property" Group="Model Properties" DataType="System.String" />
+    <Property Id="Dependent" Description="Dependent entity" Group="Model Properties" DataType="System.String" />
+    <Property Id="Inverse" Description="Inverse entity" Group="Model Properties" DataType="System.String" />
+    <Property Id="Principal" Description="Principal entity" Group="Model Properties" DataType="System.String" />    
+    <Property Id="Annotations" Description="Annotations" Group="Model Properties" DataType="System.String" />
+    <Property Id="BaseClass"  Description="Base class" Group="Model Properties" DataType="System.String" />
+    <Property Id="ChangeTrackingStrategy" Description="Change tracking strategy" Group="Model Properties" DataType="System.String" />
+    <Property Id="IsUnique" Group="Model Properties" DataType="System.Boolean" />
+    <Property Id="IsAbstract" Group="Model Properties" DataType="System.Boolean" />
+    <Property Id="ProductVersion" Label="Product Version" Description="EF Core product version" Group="Model Properties" DataType="System.String" />
+    <Property Id="IsIndexed" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsRequired" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsPrimaryKey" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsForeignKey" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsShadow" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsAlternateKey" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsConcurrencyToken" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsIndexed" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="IsUnicode" Group="Property Flags" DataType="System.Boolean" />
+    <Property Id="ValueGenerated" Group="Property Flags" DataType="System.String" />
+    <Property Id="BeforeSaveBehavior" Group="Property Flags" DataType="System.String" />
+    <Property Id="AfterSaveBehavior" Group="Property Flags" DataType="System.String" />
+    <Property Id="PropertyAccessMode" Group="Property Flags" DataType="System.String" />
+  </Properties>
+</DirectedGraph>

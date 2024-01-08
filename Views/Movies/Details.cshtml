@@ -1,0 +1,15 @@
+﻿@model TicketBookingApplication.Models.Movies
+
+<h2>@Model.Title</h2>
+<p>@Model.Description</p>
+<p>Release Date: @Model.ReleaseDate.ToShortDateString()</p>
+
+<h3>Genres</h3>
+<ul>
+    @foreach (var genre in Model.GenreMovies.Select(gm => gm.Genres))
+    {
+        <li>@genre.Name</li>
+    }
+</ul>
+
+<!-- Other movie details can be added here -->

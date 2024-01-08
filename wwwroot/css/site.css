@@ -1,0 +1,78 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.collapse navbar-collapse {
+    display: inline-flex;
+    width: 40px;
+}
+
+/* Custom styles for the TicketBookingApplication navbar */
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+    .navbar-nav .nav-link {
+        color: #333;
+        margin-right: 15px;
+    }
+
+.navbar-toggler-icon {
+    background-color: #007bff;
+}
+
+
+
+/* wwwroot/css/site.css */
+
+
+.container {
+    margin-top: 20px; /* Add spacing between the navbar and content */
+}
+
+.card {
+    transition: transform 0.3s ease-in-out;
+}
+
+    .card:hover {
+        transform: scale(1.05); /* Add a scale effect on card hover */
+    }
+
+/* Add more styling based on your specific design preferences */
+
+
+/* wwwroot/styles.css */
+
+body {
+    padding-top: 56px; /* Adjust based on your navbar height */
+    background-color: #f8f9fa; /* Set a background color */
+}
+
+.container {
+    margin-top: 20px; /* Add spacing between the navbar and content */
+}
+
+.jumbotron {
+    background-color: #007bff; /* Set a background color for the jumbotron */
+    color: #fff; /* Set text color for the jumbotron */
+}
+
+footer {
+    background-color: #f8f9fa; /* Set a background color for the footer */
+}
+
+@media (max-width: 991.98px) {
+    .navbar-nav {
+        flex-direction: column; /* Stack items vertically */
+    }
+}

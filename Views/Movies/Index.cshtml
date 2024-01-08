@@ -1,0 +1,41 @@
+﻿@model IEnumerable<TicketBookingApplication.Models.Movies>
+
+
+
+<div class="mt-4">
+    <a asp-action="Create" class="btn btn-primary">Create New</a>
+</div>
+
+<h2>Movies</h2>
+<div class="row">
+    @foreach (var movie in Model)
+    {
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="/images/scream.jpeg" class="card-img-top" alt="Movie Image">
+                <div class="card-body">
+                    <h5 class="card-title">@movie.Title</h5>
+                    <p class="card-text">@movie.Description</p>
+                    <p class="card-text"><strong>Release Date:</strong> @movie.ReleaseDate.ToShortDateString()</p>
+                    <p class="card-text"><strong>Content Rating:</strong> @movie.ContentRating</p>
+                    <!-- Add more movie details as needed -->
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Genre: @(movie.GenreMovies != null && movie.GenreMovies.Any() ? string.Join(", ", movie.GenreMovies.Select(gm => gm.Genres.Name)) : "N/A")</small>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+
+
+<div class="row">
+    @foreach (var movie in Model)
+    {
+        <!-- ... Your existing card layout ... -->
+    }
+</div>
+
+
+

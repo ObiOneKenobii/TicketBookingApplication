@@ -1,0 +1,43 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Movie Ticket Booking</title>
+    <!-- Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Custom CSS link -->
+    <link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <div class="jumbotron text-center">
+            <h1 class="display-4">Welcome to Movie Booking!</h1>
+            <p class="lead">Book your favorite movies hassle-free.</p>
+            <hr class="my-4">
+            <!-- Add a call-to-action button or content as needed -->
+            <a class="btn btn-primary btn-lg" href="@Url.Action("Index", "Movies")" role="button">Explore Movies</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-3">
+        <p>&copy; 2023 Movie Booking App</p>
+    </footer>
+
+    <!-- Bootstrap JS scripts -->
+    <!-- Bootstrap JS scripts with Popper.js from npm -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy61qZu6ucqFqpi2m3u8EAtfW1a5l83/KG" crossorigin="anonymous"></script>
+
+</body>
+</html>
